@@ -1,10 +1,10 @@
 ---
-import Index from './index.astro';
+import Layout from '../layouts/Layout.astro';
 import { Image } from 'astro:assets';
 import headshot from '../assets/headshot.jpg';
 ---
 
-<Index>
+<Layout>
     <div class="div1 base-grid">
             <div class="image-container">
                 <a href="/contact">
@@ -43,19 +43,19 @@ import headshot from '../assets/headshot.jpg';
             <h3>Coding Languages</h3>
             <ul>
                 <li>
-                    <a href="#">Python</a>
+                    <a href="/resume">Python</a>
                 </li>
                 <li>
-                    <a href="#">C/C++</a>
+                    <a href="/resume">C/C++</a>
                 </li>
                 <li>
-                    <a href="#">Typescript</a>
+                    <a href="/resume">Typescript</a>
                 </li>
                 <li>
-                    <a href="#">HTML/CSS</a>
+                    <a href="/resume">HTML/CSS</a>
                 </li>
                 <li>
-                    <a href="#">SQL</a>
+                    <a href="/resume">SQL</a>
                 </li>
             </ul>
         </div>
@@ -63,7 +63,7 @@ import headshot from '../assets/headshot.jpg';
             <h3>Legal Interests</h3>
             <ul>
                 <li>
-                    <a href="/insight">AI Regulation</a>
+                    <a href="/insights">AI Regulation</a>
                 </li>
                 <li>
                     <a href="/insights">Privacy and Data Protection</a>
@@ -77,7 +77,7 @@ import headshot from '../assets/headshot.jpg';
             </ul>
         </div>
     </div>
-</Index>
+</Layout>
 
 <style>
 
