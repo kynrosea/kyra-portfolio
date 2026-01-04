@@ -1,0 +1,236 @@
+---
+import Index from './index.astro';
+import { Image } from 'astro:assets';
+import proj1 from '../assets/proj1.png';
+import proj2 from '../assets/proj2.gif';
+import desktop from '../assets/desktop.png';
+import wrench from '../assets/wrench.png';
+---
+<!--
+    the elevator pitch page
+    this is your storefront; needs to be high-impact and clean
+    hero section: a large heading in your serif font
+        Tagline: Understanding the Intersection of Technology and Legal Theory
+    accent color: put a thick green horizontal rule (<hr>) or a small green pill badge that says available for 2026 law/tech jobs and internships
+    quick links: two big buttons
+        one green (primary: projects) and one outlined in green (secondary: read my blog)
+    <Image src={sample} alt="sample" class="image" width="250" height="250"></Image>
+-->
+
+<Index>
+    
+    <div class="div2 div-style2">
+        <h1>Researching the Intersection of Technology and Legal Theory</h1>
+        <p class="subheading1">Computer Science Student | Prospective AI Regulation Lawyer</p>
+        <div class="button-container">
+            <a href="/resume" class="resume-button">My Resume</a>
+            <a href="/insights" class="blog-button">Read My Blog</a>
+        </div>
+    </div>
+
+    <div class="div1">
+        <p class="subheading2">Skills and Services</p>
+        <h2>Areas in Which I Can Assist</h2>
+        <div class="grid grid-cols-2 gap-15 p-25">
+            <div class="card">
+                <Image class="w-25 h-25 m-auto hover:scale-115" src={wrench} alt="wrench tool icon"/> 
+                <h2>Backend Engineering</h2>
+                <p>Utilizing my knowledge of multiple programming languages such as C/C++, Python, and Javascript,
+                    I can be of service in developing back end logic. From database manipulation to data analysis,
+                    I am fairly proficient in the nature of object-oriented programming, which further lends to my
+                    skills as a backend engineer.
+                </p>
+            </div>
+            <div class="card">
+                <Image class="w-25 h-25 m-auto hover:scale-115" src={desktop} alt="desktop computer image icon"/>
+                <h2>Web Development</h2>
+                <p>
+                    Current Project: Optimizing this site for technical SEO and core web vitals. Article on my thought process coming soon.
+                    While I am still relatively new to web development, I have been progressing quickly and efficiently.
+                    I am researching the important facets of Google SEO consistently, and I can confidently claim that
+                    as my skills continue to develop, my assistance can significantly boost website visibility and traffic
+                    for enhanced sales and increased clientele. I will continue to develop my skills with further experience
+                    in my free time.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="div2 pb-10">
+        <p class="subheading2">Projects</p>
+        <h2>Check Out My Latest Projects</h2>
+        <div class="grid-container">
+            <div>
+                <Image class="w-full h-full rounded-sm" src={proj1} alt="health and fitness website in usa"/>
+            </div>
+            <div>
+                <div class="card h-full ml-10">
+                    <div class="pt-2 pl-1">
+                        <h3>Fitness Tracker Web Application</h3>
+                        <p class="text-md font-semibold pb-0.5">Producing web application for tracking fitness endeavors and metrics.</p>
+                        <p>
+                            With four additional team members, we worked to create a web application designed for tracking and managing your health and fitness goals.
+                            You are able to create an account, log into that account, and maintain any and all data that you input into the account as part of your fitness tracking.
+                            Although I mainly worked on back end tasks such as database management, data integration, and facilitation of communication with the front end of the application,
+                            I contributed to the questionnaire and settings layouts of integral pages in our application.
+                            While this is a minimal project to some, it represents one of the many steps taken in the right direction of my development as a computer scientist.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+            <div>
+                <Image class="w-full h-full pr-2 pt-20 rounded-md" src={proj2} alt="quadruped robot project training demo"/>
+            </div>
+            <div class="card mt-20 ml-10">
+                <div class="pt-2 pl-1">
+                    <h3>PPO Training of Spot Mini Mini</h3>
+                    <p class="text-md font-semibold pb-0.5">Implementing reinforcement learning on a quadruped robot.</p>
+                    <p>
+                        This project aims to understand how to integrate quadrupedal robots into enhancing quality of life amongst those with dementia.
+                        In conjunction with two team members, we worked to implement Proximal Policy Optimization to enhance the learning behavior of the Spot Mini Mini model.
+                        Primarily, I worked on modifying the PPO implementation from bottom to top, while my teammates worked on other aspects of the model's functionality.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="div1 pt-25 pb-25">
+        <h2 class="heading1">Where Can You Find Me?</h2>
+        <div class="flex justify-center gap-10 professional-links">
+            <a href="https://github.com/kynrosea">GitHub</a>
+            <a href="https://www.linkedin.com/in/kynnedy-armstrong-54a913233">LinkedIn</a>
+        </div>
+    </div>
+
+    
+</Index>
+
+<style>
+
+    .div-style2 {
+        padding-top: 100px;
+        font-size: 60;
+    }
+
+    .heading1 {
+        margin-top: 25px;
+        padding-top: 25px;
+        padding-bottom: 10px;
+    }
+
+    .subheading1 {
+        margin-top: 25px;
+        font-size:35;
+        color: rgb(74, 69, 69);
+        text-align: center;
+        font-weight: bold;
+    }
+
+    .subheading2 {
+        
+        margin: auto auto;
+        font-size: 25;
+        color: rgb(48, 48, 48);
+        text-align: center;
+        font-weight:bold;
+        padding: 15px;
+    }
+
+    .card-container {
+        display: grid;
+        justify-content: center;
+        gap: 20px;
+        padding: 20px;
+
+    }
+
+    .card {
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        padding: 20px;
+        border-radius: 10px;
+        transition: 0.3s;
+        background-color: white;
+    }
+
+    .card:hover {
+        box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+    }
+
+    h2 {
+        padding-top: 0rem;
+        text-align:center;
+    }
+
+    .image {
+        margin: auto auto;
+        justify-content: center;
+        border-radius: 150px;
+    }
+
+    .button-container {
+        display: flex;
+        justify-content: center;
+        margin: 25px auto;
+        margin-bottom: 100px;
+        gap: 20px;
+    }
+
+    .resume-button {
+        padding: 5px 10px;
+        display: flex;
+        text-align: center;
+        border-style: hidden;
+        background-color: var(--secondary-green);
+        border-radius: 20px;
+        font-size: medium;
+        font-weight: bold;
+        color: var(--secondary-text);
+    }
+
+    .resume-button:hover {
+        scale: 1.05;
+        cursor: pointer;
+    }
+
+    .blog-button {
+        padding: 5px 10px;
+        display: flex;
+        text-align: center;
+        border-style: hidden;
+        background-color: rgba(0, 0, 0, 0.829);
+        border-radius: 20px;
+        font-size: medium;
+        font-weight: bold;
+        color: var(--secondary-text);
+    }
+
+    .blog-button:hover {
+        scale: 1.05;
+        cursor: pointer;
+    }
+
+    
+    .grid-container {
+        display:grid;
+        grid-template-columns: 40% 60%;
+        grid-template-rows: auto auto;
+        text-align: left;
+        padding-left: 10px;
+        padding-top: 25px;
+        padding-bottom: 25px;
+    }
+
+    .professional-links {
+        font-size: x-large;
+        font-weight: bold;
+        text-decoration: underline;
+        padding-bottom: 25px;
+    }
+
+    .professional-links a:hover {
+        scale: 1.15;
+    }
+
+</style>

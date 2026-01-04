@@ -1,0 +1,42 @@
+---
+import Index from './index.astro';
+---
+
+<Index>
+    <div class="base">
+        <div class="card">
+            <h2>Fitness Tracker Web App</h2>
+            <p>Constructed majority of backend functionality, including
+                database management (PostgreSQL, SQLAlchemy, Pydantic), front end to back end communication (CORS Middleware, FastAPI),
+                and application deployment (Docker).
+            </p>
+        </div>
+        <div class="card">
+            <h2>Project 2</h2>
+        </div>
+        <div class="card">
+            <h2>Project 3</h2>
+        </div>
+    </div>
+</Index>
+
+
+<style>
+    .base {
+        display: flex;
+        gap: 50px;
+        padding: 3px 15px;
+        margin-top: 50px;
+        margin-bottom: 100px;
+    }
+    .card {
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        padding: 10px;
+        border-radius: 15px;
+        transition: 0.3s;
+    }
+
+    .card:hover {
+        box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+    }
+</style>

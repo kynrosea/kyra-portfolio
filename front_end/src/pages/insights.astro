@@ -1,0 +1,63 @@
+---
+import Index from './index.astro';
+---
+
+<Index>
+    <div style="background-color:var(--primary-green);">
+        <div class="flex flex-col pt-25 pb-25 pl-10 pr-10 gap-15">
+            <div class="blog-card">
+                <h2>
+                    <a href="#">The Importance of Privacy and Data Protection</a>
+                </h2>
+                <p>Coming Soon: Learn how to stay safe on the internet.</p>
+            </div>
+            <div class="blog-card">
+                <h2>
+                    <a href="#">Understanding Intellectual Property</a>
+                </h2>
+                <p>Coming Soon: Know your rights to your digital property.</p>
+            </div>
+            <div class="blog-card">
+                <h2>
+                    <a href="#">Algorithmic Bias</a>
+                </h2>
+                <p>Coming Soon: Algorithms are sneakier than you might think.</p>
+            </div>
+        </div>
+    </div>
+    
+    
+    
+</Index>
+
+<style>
+
+    .container {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 50px 50px;
+        margin: 50px auto;
+    }
+
+    h2 {
+        font-family: sans-serif;
+    }
+
+    .blog-card {
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        border-radius: 15px;
+        transition: 0.3s;
+        line-height: 1.5;
+        flex-grow: 1;
+        padding-top:50px;
+        padding-bottom: 100px;
+        padding-left: 50px;
+        padding-right: 50px;
+        background-color: white;
+    }
+
+    .blog-card:hover {
+        box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+        cursor: pointer;
+    }
+</style>

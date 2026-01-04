@@ -1,0 +1,129 @@
+@import "tailwindcss";
+
+:root {
+    --primary-green: #6F8D78;
+    --secondary-green: #6BA47C;
+    --primary-text: black;
+    --secondary-text: #f7ebeb;
+    --tertiary-text: gray;
+}
+
+html {
+    font-family: sans-serif;
+}
+
+.menu-h1 {
+    font-size: x-large;
+    font-weight: bolder;
+    padding-top: 1rem;
+    line-height: 1;
+}
+
+h1 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: xx-large;
+    font-weight: bolder;
+    text-align: center;
+}
+
+h2 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: x-large;
+    font-weight: bold;
+    padding-top: 0.5rem;
+}
+
+h3 {
+    font-size: large;
+    font-weight: bold;
+    padding-bottom: 0.5rem;
+}
+
+body {
+    margin: 0 auto;
+    line-height: 1.5;
+}
+
+
+
+header {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: thin solid darkslategray;
+    width: 100%;
+    padding: 10px;
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    padding: 10px;
+    border-radius: 15px;
+    transition: 0.3s;
+}
+
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.dropdown-button {
+    cursor: pointer;
+    display: inline-block;
+}
+
+.line1, .line2, .line3 {
+    width: 35px;
+    height: 5px;
+    background-color: black;
+    margin: 6px 0;
+    transition: 0.4s;
+}
+
+.change .line1 {
+    transform: translate(0, 11px) rotate(-45deg);
+}
+
+.change .line2 {
+    opacity: 0;
+}
+
+.change .line3 {
+    transform: translate(0, -11px) rotate(45deg);
+}
+
+.nav-container {
+    max-width: 100ch;
+    margin: auto;
+}
+
+.nav-content {
+    font-size: medium;
+    font-weight: bold;
+    display: flex;
+    list-style: none;
+    gap: 20px;
+    padding-top: 1rem;
+}
+
+.nav-content li:hover {
+    scale: 1.10;
+}
+
+.contact-link {
+    cursor: pointer;
+}
+
+.contact-link:hover {
+    text-decoration: underline;
+}
+
+.div1 {
+    background-color: var(--primary-green);
+    color: var(--primary-text);
+    justify-content: center;
+}
+
+.div2 {
+    background-color: white;
+    color: var(--primary-text)
+}
+

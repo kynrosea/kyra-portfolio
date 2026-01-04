@@ -1,0 +1,155 @@
+---
+import Index from './index.astro';
+import { Image } from 'astro:assets';
+import headshot from '../assets/headshot.jpg';
+---
+
+<Index>
+    <div class="div1 base-grid">
+            <div class="image-container">
+                <a href="/contact">
+                    <Image src={headshot} alt="young woman pose reference for professional headshot" class="image"/>
+                </a>
+            </div>
+            <div>
+                <h2>
+                    Hi, I'm Kyra Armstrong.
+                </h2>
+                <h3>
+                    Computer Science Student | Prospective AI Regulation Lawyer
+                </h3>
+                <p style="padding-bottom:10px;">
+                    I am currently a student at the University of Tennessee-Knoxville, majoring in Computer Science.
+                    Additionally, I am on track to go to law school to further my understanding of the legal implications of technological innovation.
+                    In my free time, I enjoy reading, crocheting, and language learning. As of right now, I am learning Spanish, Mandarin, and Korean.
+                    I enjoy expanding multiple aspects of my skillset, even if they seem disjointed.
+                </p>
+                <p>
+                    Understanding the intersection of technology and legal theory is my main focus;
+                    however, on my journey to diving deeper into this particular field of research and activism,
+                    I intend to develop the foundational skills of a computer scientist.
+                    This includes web development, machine learning (specifically working with LLMs), back end engineering, and database management.
+                    While there are additional interests, these are the highlights of current study and future endeavors.
+                    As I prepare for the transition into law school, I hope to grow in my baseline understanding of
+                    pertinent tech policies and practices by creating and contributing to the computer science world.
+                </p>
+            </div>
+    </div>
+    <div>
+        <p class="subheading1">Practical Skills and Interests</p>
+    </div>
+    <div class="skill-grid card">
+        <div>
+            <h3>Coding Languages</h3>
+            <ul>
+                <li>
+                    <a href="#">Python</a>
+                </li>
+                <li>
+                    <a href="#">C/C++</a>
+                </li>
+                <li>
+                    <a href="#">Typescript</a>
+                </li>
+                <li>
+                    <a href="#">HTML/CSS</a>
+                </li>
+                <li>
+                    <a href="#">SQL</a>
+                </li>
+            </ul>
+        </div>
+        <div>
+            <h3>Legal Interests</h3>
+            <ul>
+                <li>
+                    <a href="/insight">AI Regulation</a>
+                </li>
+                <li>
+                    <a href="/insights">Privacy and Data Protection</a>
+                </li>
+                <li>
+                    <a href="/insights">Algorithmic Bias</a>
+                </li>
+                <li>
+                    <a href="/insights">Intellectual Property</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</Index>
+
+<style>
+
+    h3 {
+        font-size: large;
+        font-weight: bold;
+        padding-bottom: 0.5rem;
+    }
+
+    ul {
+        list-style: none;
+    }
+
+    ul li:hover {
+        border-style: hidden;
+        border-radius: 15px;
+        background-color: rgba(112, 128, 144, 0.25);
+
+    }
+
+    .subheading1 {
+        margin: auto auto;
+        font-size: x-large;
+        font-weight: bold;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        color: black;
+        padding: 10px;
+        margin-top: 50px;
+        text-align:center;
+    }
+
+    .base-grid {
+        display: grid;
+        justify-content: left;
+        grid-template-columns: auto auto;
+        gap: 25px;
+        padding-left: 25px;
+        padding-right: 20px;
+        padding-top:200px;
+        padding-bottom: 200px;
+        
+    }
+
+    .image-container {
+        display: flex;
+        align-items: center;
+    
+        width: 250px;
+    }
+
+    .image {
+        height: 250px;
+        border-style: solid;
+        background-color: var(--primary-green);
+        border-radius: 400px;
+    }
+
+    .image-container:hover {
+        scale: 1.15;
+    }
+
+    .skill-grid {
+        display: grid;
+        grid-template-columns: auto auto;
+        border-style: groove;
+        border-width: 2px;
+        border-color: rgb(112, 128, 144);
+        border-radius: 10px;
+        padding: 5px;
+        margin-left: 10px;
+        margin-right: 10px;
+        margin-bottom: 50px;
+        text-align: center;
+    }
+</style>

@@ -1,0 +1,41 @@
+---
+import Index from './index.astro';
+import { Image } from 'astro:assets';
+import resume from '../assets/resume.pdf';
+---
+
+<Index>
+    <div>
+        <div class="flex mt-10 mb-3 justify-center text-center">
+            <a href="../../public/resume.pdf" download="KA_resume.pdf" class="download">Download PDF</a>
+        </div>
+        
+        <iframe class="iframe-container" src="/resume.pdf" width="800" height="600"></iframe>
+    </div>
+</Index>
+
+
+<style>
+    .download {
+        display:flex;
+        border: 1px inset darkslategray;
+        border-radius: 15px;
+        text-align: center;
+        justify-content: center;
+        padding: 10px;
+    }
+
+    .download:hover {
+
+        background-color: rgba(112, 128, 144, 0.25);
+    }
+
+    .iframe-container {
+        display:flex;
+        justify-content: center;
+        text-align: center;
+        margin: auto auto;
+
+        border-radius: 5px;
+    }
+</style>

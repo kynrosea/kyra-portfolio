@@ -1,0 +1,32 @@
+---
+import "../styles/global.css"
+import {ViewTransitions} from 'astro:transitions';
+---
+<!-----
+centered layout
+top navigation
+accent color: emerald
+max width: never exceed this
+horizontal padding on every page
+vertical breathing room
+
+layout contains header (name and nav), main content, and footer (simple)
+--- -->
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<link rel="stylesheet" href="../styles/global.css">
+		<meta name="generator" content={Astro.generator} />
+		<meta name="Portfolio website for computer scientist and prospective lawyer in AI regulation in the US"/>
+		<title>Kyra Armstrong | Computer Science & Legal Theory</title>
+		<ViewTransitions/>
+		
+	</head>
+	<body>
+		<slot />
+	</body>
+</html>
+

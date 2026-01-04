@@ -1,0 +1,59 @@
+---
+// front matter tsx
+import "../styles/global.css"
+import {Content as About} from '../pages/about.md';
+
+function toggleMenu() {
+    const menu = document.getElementById("menu");
+    menu?.classList.toggle("change");
+}
+
+
+
+---
+
+
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="../styles/global.css" />
+        <title>Menu Component</title>
+    </head>
+        
+    <body>
+        <div>
+            <nav>
+                <div class="nav-container">
+                    <ul class="nav-content mx-auto">
+                        <li><a href="/home">Home</a></li>
+                        <li><a href="/about">About</a></li>
+                        <!-- <li><a href="/projects">Projects</a></li>-->
+                        <li><a href="/insights">Insights</a></li>
+                        <li><a href="/resume">Resume</a></li>
+                        <li>
+                            <a href="/contact" class="contact-button">Contact Me</a>
+                        </li>
+                    </ul>
+                    
+                </div>
+     
+            </nav>
+
+        </div>
+        <style>
+            .contact-button {
+                border: 2px solid var(--secondary-green);
+                padding: 5px;
+                border-radius: 20px;
+
+            }
+            .contact-button li:hover {
+                text-decoration: none;
+            }
+        </style>
+    </body>
+</html>
+
+
+
