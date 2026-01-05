@@ -154,6 +154,7 @@ header {
         justify-content: center;
     }
     .nav-content {
+        flex-direction: column;
         justify-content: center;
         text-align: center;
         margin: auto;
