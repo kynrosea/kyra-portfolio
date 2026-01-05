@@ -11,7 +11,7 @@ import Layout from '../layouts/Layout.astro';
             <hr class="mb-7">
 
             <form>
-                <div class="grid grid-cols-2 gap-2 ">
+                <div class="grid-container">
                     <div>
                         <label for="first-name">First Name</label>
                         <input class="border border-gray-500 border-solid mt-1 mb-3 rounded-sm" type="text" id="first-name" name="first-name">
@@ -30,7 +30,7 @@ import Layout from '../layouts/Layout.astro';
                     </div>
                 </div>
                 
-                <div class="grid grid-cols-1">
+                <div class="message-container">
                     <label for="message">Message</label>
                     <textarea class="wrapping-input border border-gray-500 border-solid mt-1 mb-3 pb-20 pt-2 pr-2 pl-2 rounded-sm" placeholder="Enter message here..."/>
                 </div>
@@ -63,6 +63,33 @@ import Layout from '../layouts/Layout.astro';
         width: 80%;
         max-width: 500px;
         border-radius: 5px;
+    }
+
+    .grid-container {
+        display: grid;
+        grid-template-columns: auto auto;
+        gap: 20px;
+        margin: auto;
+    }
+
+    .message-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        margin: auto;
+        padding-top: 20px;
+    }
+    @media (max-width: 960px) {
+        .grid-container {
+            grid-template-columns: 1fr;
+            text-align: center;
+            margin: auto;
+            padding: 0rem 2rem;
+        }
+
+        .message-container {
+            text-align: center;
+        }
     }
 </style>
 

@@ -33,7 +33,14 @@ import Layout from '../layouts/Layout.astro';
         justify-content: center;
         text-align: center;
         margin: auto auto;
-
         border-radius: 5px;
+    }
+
+    @media (max-width: 960px) {
+        .iframe-container {
+            flex-direction: column;
+            width: 90%;
+            margin-bottom: 15px;
+        }
     }
 </style>

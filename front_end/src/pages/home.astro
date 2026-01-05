@@ -31,7 +31,7 @@ import wrench from '../assets/wrench.png';
     <div class="div1">
         <p class="subheading2">Skills and Services</p>
         <h2>Areas in Which I Can Assist</h2>
-        <div class="grid grid-cols-2 gap-15 p-25">
+        <div class="grid-container2">
             <div class="card">
                 <Image class="w-25 h-25 m-auto hover:scale-115" src={wrench} alt="wrench tool icon"/> 
                 <h2>Backend Engineering</h2>
@@ -222,6 +222,14 @@ import wrench from '../assets/wrench.png';
         padding-bottom: 25px;
     }
 
+	.grid-container2 {
+		display: grid;
+		grid-template-columns: 50% 50%;
+		padding: 35px 25px;
+		gap: 25px;
+		margin: auto 200px;
+	}
+
     .professional-links {
         font-size: x-large;
         font-weight: bold;
@@ -231,6 +239,29 @@ import wrench from '../assets/wrench.png';
 
     .professional-links a:hover {
         scale: 1.15;
+    }
+
+    @media (max-width: 960px) {
+        .grid-container {
+            grid-template-columns: 1fr;
+			padding-right: 10px;
+        }
+
+		.grid-container2 {
+			grid-template-columns: 1fr;
+			margin: auto auto;
+			padding: auto auto;
+		}
+        
+        .card-container {
+            grid-template-columns: 1fr;
+        }
+
+		.card {
+			margin: 15px auto;
+			justify-content: center;
+		}
+        
     }
 
 </style>

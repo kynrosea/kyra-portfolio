@@ -91,17 +91,28 @@ header {
 }
 
 .nav-container {
-    max-width: 100ch;
-    margin: auto;
+    position: static;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto auto;
+    width: 100%;
+    padding: 1rem 1rem;
+    gap: 10px;
+
 }
 
 .nav-content {
     font-size: medium;
     font-weight: bold;
     display: flex;
+    justify-content: flex-end;
+    text-align: right;
     list-style: none;
     gap: 20px;
     padding-top: 1rem;
+    margin-left: auto;
+
 }
 
 .nav-content li:hover {
@@ -132,14 +143,21 @@ header {
     anything below this is for mobile responsiveness optimization
 */
 
-@media (max-width:800px) {
+@media (max-width:960px) {
     /*
         everything in these brackets happens only on mobile devices
     */
     
-    .mobile-container {
+    .nav-container {
         flex-direction: column;
-        padding: 1rem;
+        text-align: center;
+        justify-content: center;
     }
+    .nav-content {
+        justify-content: center;
+        text-align: center;
+        margin: auto;
+    }
+
 }
 

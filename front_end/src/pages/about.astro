@@ -124,7 +124,6 @@ import headshot from '../assets/headshot.jpg';
     .image-container {
         display: flex;
         align-items: center;
-    
         width: 250px;
     }
 
@@ -151,5 +150,26 @@ import headshot from '../assets/headshot.jpg';
         margin-right: 10px;
         margin-bottom: 50px;
         text-align: center;
+    }
+
+    @media (max-width: 960px) {
+        .base-grid {
+            grid-template-columns: 1fr;
+            text-align:center;
+            padding-top: 50px;
+            padding-bottom: 50px;
+        }
+
+        .image-container {
+            justify-content: center;
+            margin: auto auto;
+        }
+
+        .skill-grid {
+            grid-template-columns: 1fr;
+            text-align: center;
+            padding: 1rem 1rem;
+        }
+
     }
 </style>
