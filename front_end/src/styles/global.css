@@ -127,3 +127,19 @@ header {
     color: var(--primary-text)
 }
 
+/*
+    leave the desktop code above alone
+    anything below this is for mobile responsiveness optimization
+*/
+
+@media (max-width:800px) {
+    /*
+        everything in these brackets happens only on mobile devices
+    */
+    
+    .mobile-container {
+        flex-direction: column;
+        padding: 1rem;
+    }
+}
+
